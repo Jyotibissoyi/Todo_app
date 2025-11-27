@@ -7,7 +7,9 @@ const createTask =async (req, res)=>{
         const userId = req.token.userId;
         const {title, description, deadLine} = req.body;
         const bodyData = req.body;
+        
         bodyData.userId = userId;
+        bodyData.satus = "pending"
 
         if(!title || !description || !deadLine){
           return res.status(500).send({

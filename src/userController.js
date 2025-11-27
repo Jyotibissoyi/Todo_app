@@ -4,14 +4,14 @@ const userModal = require("./userModal");
 const registerUser = async (req, res) => {
     try {
 
-        const { name, email, password } = req.res;
+        const { name, email, password } = req.body;
         if (!name || !email || !password) {
             return res.status(400).send({
                 message: "Please provide all detals (name, email, password)"
             })
         };
 
-        const saveUser = await userModal.create(req.res);
+        const saveUser = await userModal.create(req.body);
 
         return res.status(201).send({
             message: "User registered successfully",
