@@ -1,0 +1,21 @@
+Task Title:
+Build a Simple User Authentication & Todo API using Node.js, PostgreSQL, JWT & GraphQL
+
+🎯 Objective
+
+Evaluate the candidate’s ability to:
+
+Build a backend API quickly
+Implement authentication using JWT
+Use PostgreSQL for database storage
+Use GraphQL for query & mutation
+Write clean, modular, production-like code
+
+
+
+structure :
+
+title
+description
+date 
+deadline
